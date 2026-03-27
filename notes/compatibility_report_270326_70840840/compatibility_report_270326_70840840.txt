@@ -1,0 +1,486 @@
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\scripts\scr_enemy_type\scr_enemy_type.gml
+Converted description /// @description scr_enemy_type(enemyid, enemy type, path type, timer)/// @param enemyid
+/// @param  enemy type
+/// @param  path type
+/// @param  timer
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\scripts\scr_spawn_prize\scr_spawn_prize.gml
+Converted description /// @description scr_spawn_prize(percent,source [0=enemy,1=far right],special=1);/// @param percent
+/// @param source [0=enemy
+/// @param 1=far right]
+/// @param special=1
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\scripts\scr_draw_pos_neg\scr_draw_pos_neg.gml
+Converted description /// @description scr_draw_pos_neg(value,other object, type [score...hp...armor])/// @param value
+/// @param other object
+/// @param  type [score...hp...armor]
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\scripts\scr_bubble_text\scr_bubble_text.gml
+Converted description /// @description scr_bubble_text(text,letters xscale,letters yscale,x offset,y offset,letters_xoffset,letters_yoffset,letters alpha)/// @param text
+/// @param letters xscale
+/// @param letters yscale
+/// @param x offset
+/// @param y offset
+/// @param letters_xoffset
+/// @param letters_yoffset
+/// @param letters alpha
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\scripts\choose_enemy_path\choose_enemy_path.gml
+Converted description /// @description choose_enemy_path()
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\scripts\choose_enemy_type\choose_enemy_type.gml
+Converted description /// @description choose_enemy_type()
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\scripts\scr_draw_a_starfield\scr_draw_a_starfield.gml
+Converted description /// @description scr_draw_a_starfield()
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_player_parent\Create_0.gml
+Converted description /// @description variable set
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_player_parent\Step_0.gml
+Converted description /// @description handle variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_player\Create_0.gml
+Converted description /// @description variables and setup
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_player\Alarm_1.gml
+Converted description /// @description Shot power timer [1]
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_player\Alarm_0.gml
+Converted description /// @description make this do something
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_player\Step_0.gml
+Converted description /// @description handle move and shot
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_player\Draw_0.gml
+Converted description /// @description draw elements
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_player_thrust\Step_0.gml
+Converted description /// @description remain with player
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shot1\Create_0.gml
+Converted description /// @description variable and setup
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shot_long\Create_0.gml
+Converted description /// @description variable and setup
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shot_long\Step_0.gml
+Converted description /// @description capture shot position
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shot_long\Draw_0.gml
+Converted description /// @description draw shots
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shot_parent\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shot_parent\Step_0.gml
+Converted description /// @description move_shot
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shot_parent\Draw_0.gml
+Converted description /// @description temp code 
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shield\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shield\Step_0.gml
+Converted description /// @description stay with player
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_cannon\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_cannon\Alarm_0.gml
+Converted description /// @description make the alarm work
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_cannon\Step_0.gml
+Converted description /// @description position cannon
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_cannon\Draw_0.gml
+Converted description /// @description draw change
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_repair_main_bottom\Create_0.gml
+Converted description /// @description do not inherit main event
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_repair_main_bottom\Step_0.gml
+Converted description /// @description stick with top
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_repair_main\Create_0.gml
+Converted description /// @description set up dock
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_repair_main\Alarm_0.gml
+Converted description /// @description Make something happen
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_repair_main\Step_0.gml
+Converted description /// @description keep player from hitting and others
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_repair_dock\Create_0.gml
+Converted description /// @description handle variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_repair_dock\Alarm_0.gml
+Converted description /// @description finish light show and undock
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_repair_dock\Step_0.gml
+Converted description /// @description check for position, handle show
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_drone_parent\Create_0.gml
+Converted description /// @description initial variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_drone_parent\Step_0.gml
+Converted description /// @description keep up with player
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_plasma_orb\Create_0.gml
+Converted description /// @description Initial variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_plasma_orb\Step_0.gml
+Converted description /// @description handle orb damage
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_plasma_orb\Draw_0.gml
+Converted description /// @description draw
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_lightning\Create_0.gml
+Converted description /// @description starting variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_lightning\Draw_0.gml
+Converted description /// @description draw
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_parent\Create_0.gml
+Converted description /// @description variables and setup
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_parent\Destroy_0.gml
+Converted description /// @description for tutorial
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_parent\Alarm_1.gml
+Converted description /// @description use in tutorial
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_parent\Alarm_0.gml
+Converted description /// @description fire again when this is hit
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_parent\Step_0.gml
+Converted description /// @description move the enemy and fire if necessary. Handle Shield
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_1\Create_0.gml
+Converted description /// @description handle unique basic variables for enemy_1
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_1\Step_0.gml
+Converted description /// @description handle move info
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_1\Draw_0.gml
+Converted description /// @description handle move info
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_shot_parent\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_shot_parent\Step_0.gml
+Converted description /// @description destruction, damage, etc
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_basic_shot\Create_0.gml
+Converted description /// @description variable and setup
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_shot_long\Create_0.gml
+Converted description /// @description variable and setup
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_shot_long\Step_0.gml
+Converted description /// @description capture shot position
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_shot_long\Draw_0.gml
+Converted description /// @description draw shots
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shield_enemy_basic\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shield_enemy_basic\Step_0.gml
+Converted description /// @description stay with player
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shield_enemy_basic\Draw_0.gml
+Converted description /// @description temp stuff
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_large_1\Create_0.gml
+Converted description /// @description Set inital variables including turrets (2)/// @param 2
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_large_1\Destroy_0.gml
+Converted description /// @description destroy turrets
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_large_1\Step_0.gml
+Converted description /// @description Handle movement and turrets
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_large_1\Draw_0.gml
+Converted description /// @description drawing functions
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_turret_1\Create_0.gml
+Converted description /// @description create options
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_turret_1\Step_0.gml
+Converted description /// @description Turrent adjustments
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_turret_1\Draw_0.gml
+Converted description /// @description draw functions
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_explosion_enemy_on_player\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_explosion_enemy_on_player\Step_0.gml
+Converted description /// @description keep aligned with player
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_enemy_explosion_1\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_explosion_on_enemy\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_explosion_on_enemy\Step_0.gml
+Converted description /// @description keep aligned with enemy
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_explosion_on_enemy\Draw_0.gml
+Converted description /// @description temp
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_drone_explosion\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_drone_explosion\Other_7.gml
+Converted description /// @description destroy me
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_bg_handler\Create_0.gml
+Converted builtin - line 38: background_visible[0] = 1 -> __background_set( e__BG.Visible, 0, 1 )
+Converted builtin - line 36: background_index[0]= bg_starfield -> __background_set( e__BG.Index, 0, bg_starfield )
+Converted builtin - line 37: background_hspeed[0] = -3 -> __background_set( e__BG.HSpeed, 0, -3 )
+Converted description /// @description initial tiles
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_bg_handler\Step_0.gml
+Converted description /// @description handle tiles
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_wave_handler\Create_0.gml
+Converted description /// @description Set variables and waves
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_wave_handler\Alarm_0.gml
+Converted description /// @description advance the wave
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_wave_handler\Step_0.gml
+Converted description /// @description Trigger Waves
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_wave_handler\Draw_0.gml
+Converted description /// @description Make sure ship shows up 
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\Create_0.gml
+Converted description /// @description set score value
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\Step_0.gml
+Converted description /// @description handle rewards
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\Draw_64.gml
+Converted description /// @description Draw armor (hp), score and more/// @param hp
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_107.gml
+Converted description /// @description temp code
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_57.gml
+Converted description /// @description temp wave reduce
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_56.gml
+Converted description /// @description temporary pause
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_55.gml
+Converted description /// @description score increase
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_54.gml
+Converted description /// @description undock
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_53.gml
+Converted description /// @description temp spawn shield
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_52.gml
+Converted description /// @description temp spawn speed
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_51.gml
+Converted description /// @description temp spawn armor
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_50.gml
+Converted description /// @description temp spawn power
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_49.gml
+Converted description /// @description temporarily used to reduce hit points on player
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_48.gml
+Converted description /// @description temp wave add
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_score_control\KeyRelease_17.gml
+Converted description /// @description spawn orb
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_opening\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_opening\Alarm_1.gml
+Converted description /// @description spawn random things
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_opening\Alarm_0.gml
+Converted description /// @description next point and letter
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_opening\Step_0.gml
+Converted description /// @description instantiate partner objects if not in game over state
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_opening\Draw_0.gml
+Converted description /// @description draw each step
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_tutorial\Create_0.gml
+Converted description /// @description get things started
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_tutorial\Alarm_0.gml
+Converted description /// @description Go through Tutorial steps
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_tutorial\Step_0.gml
+Converted description /// @description reset for tutorial
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_tutorial\Mouse_7.gml
+Converted description /// @description temporary
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_game_over\Destroy_0.gml
+Converted description /// @description destroy surface
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_game_over\Alarm_0.gml
+Converted description /// @description handle game over draw
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_game_over\Step_0.gml
+Converted description /// @description Instantiate objects if Score has drawn
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_game_over\Draw_0.gml
+Converted description /// @description set surface and draw game over
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_game_over\KeyRelease_107.gml
+Converted description /// @description temp code
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_armor_bonus\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_armor_bonus\Step_0.gml
+Converted description /// @description manage being picked up
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shield_bonus\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shield_bonus\Step_0.gml
+Converted description /// @description manage being picked up
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_power_bonus\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_power_bonus\Step_0.gml
+Converted description /// @description manage being picked up
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shot_speed_bonus\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_shot_speed_bonus\Step_0.gml
+Converted description /// @description manage being picked up
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_prize_parent\Create_0.gml
+Converted description /// @description set variables and potential bonuses
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_prize_parent\Alarm_1.gml
+Converted description /// @description chase player if chosen
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_prize_parent\Alarm_0.gml
+Converted description /// @description rotate_prize
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_prize_parent\Step_0.gml
+Converted description /// @description handle player collision
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_prize_parent\Draw_0.gml
+Converted description /// @description draw elements
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_pos_and_neg_parent\Create_0.gml
+Converted description /// @description variables and alarm
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_pos_and_neg_parent\Step_0.gml
+Converted description /// @description handle bumps
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_pos_and_neg_parent\Draw_0.gml
+Converted description /// @description draw type
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_blank\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_blank\Alarm_0.gml
+Converted description /// @description detroy if alive too long
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_blank\Step_0.gml
+Converted description /// @description determine destruction capability
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_blank\Draw_0.gml
+Converted description /// @description draw functions
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_bubble\Create_0.gml
+Converted description /// @description set variables
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_bubble\Alarm_1.gml
+Converted description /// @description quickly fade
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_bubble\Alarm_0.gml
+Converted description /// @description destroy at timer end
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_bubble\Step_0.gml
+Converted description /// @description follow if attached
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_bubble\Draw_0.gml
+Converted description /// @description draw text when needed
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_set_tutorial\Create_0.gml
+Converted description /// @description set image
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_set_tutorial\Mouse_7.gml
+Converted description /// @description turn tutorial on/off
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_set_debug\Create_0.gml
+Converted description /// @description set image
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_set_debug\Mouse_7.gml
+Converted description /// @description turn tutorial on/off
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_debug_ship_selector\Create_0.gml
+Converted description /// @description variables ship type set
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_debug_ship_selector\Alarm_0.gml
+Converted description /// @description rotate number
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_debug_ship_selector\Step_0.gml
+Converted description /// @description get mouse actions and modify as needed
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_debug_ship_selector\Mouse_57.gml
+Converted description /// @description spawn enemy
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_debug_ship_selector\Mouse_56.gml
+Converted description /// @description spawn enemy
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_debug_ship_selector\Draw_0.gml
+Converted description /// @description draw numbers
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_start\Create_0.gml
+Converted description /// @description variables and start
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_start\Alarm_0.gml
+Converted description /// @description destroy me as game moves on.
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_start\Mouse_7.gml
+Converted description /// @description start_game
+
+Converting GML script: C:\Users\hoffe\OneDrive\GameMaker\side_scroller_v08\side_scroller_v08.gmx\mvc\objects\obj_start\KeyRelease_32.gml
+Converted description /// @description start_game
+
+Missing audiogroup for sound: 'sound0' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'action\action_kill_object.gml'
+Added compatibility script 'background\draw_background.gml'
+Added compatibility script 'background\draw_background_part.gml'
+Added compatibility script 'background\__background_set.gml'
+Added compatibility script 'background\__background_set_internal.gml'
+Added compatibility script 'instance\instance_create.gml'
+Added compatibility script 'object\object_get_depth.gml'
+Added compatibility script 'tile\tile_add.gml'
+Added compatibility script 'tile\tile_delete.gml'
+Added compatibility script 'tile\tile_get_ids_at_depth.gml'
+Added compatibility script 'tile\tile_get_x.gml'
+Added compatibility script 'tile\tile_layer_shift.gml'
+Added compatibility script 'action\__init_action.gml'
+Added compatibility script 'background\__init_background.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script 'background\__background_get_element.gml'
+Added compatibility script 'background\__background_get_internal.gml'
+Added compatibility script 'background\__background_set_element.gml'
+Added compatibility script '__global_object_depths.gml'
