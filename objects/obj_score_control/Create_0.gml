@@ -17,4 +17,4 @@ if (global.debug == 1)
 score_prize_goal = 1000;
 score_prize_increment = 250;
 score_counter = 0;
-
+global.score = 0;

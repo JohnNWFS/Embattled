@@ -17,7 +17,7 @@ if (place_meeting(x,y,obj_player_parent))
 //show_debug_message(string(id) + " " + string(x));
 if (enemy_hp <= 0)
 {
-    score += enemy_value;
+    global.score += enemy_value;
     scr_draw_pos_neg(enemy_value,0,"score");
     instance_create(x,y,my_explosion);
     scr_spawn_prize(prize_percent,0,0);

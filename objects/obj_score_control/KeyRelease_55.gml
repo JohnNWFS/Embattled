@@ -1,3 +1,2 @@
 /// @description score increase
-score += 25;
-
+global.score += 25;

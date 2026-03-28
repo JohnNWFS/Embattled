@@ -4,7 +4,7 @@ if (instance_exists(obj_wave_handler))//to handle end game, have to ignore when 
 {
     if (obj_wave_handler.wave == .5)
     { 
-    obj_player_thrust.visible = 0;
+    if (instance_exists(our_thrust)) { our_thrust.visible = 0; }
     }
 }    
 
@@ -85,7 +85,7 @@ if (visible == 1)
     if ((x+hor_speed < room_width - 200) && (keyboard_check(vk_right) || keyboard_check(ord("D"))) )//max right
     {
         x+= hor_speed;
-        obj_player_thrust.visible = 1; //make sure we can see thrust if move right
+        if (instance_exists(our_thrust)) { our_thrust.visible = 1; } //make sure we can see thrust if move right
         show_debug_message(string(x) + " " + string(room_width-200));
     }
 
@@ -122,4 +122,3 @@ if (plasma_available == 0)
 } 
     
     
-

@@ -1,15 +1,15 @@
 /// @description handle tiles
 if (os_browser == browser_not_a_browser)
 {
-_tile_flip += 1;
-if (_tile_flip < tile_speed)
+tile_scroll_tick += 1;
+if (tile_scroll_tick < tile_speed)
 {
 tile_layer_shift(1000,-1,0);
 tile_spawn +=1;
 }
 
-if (_tile_flip = tile_speed) {_tile_flip = 0 ;}
-if(tile_spawn = 32)
+if (tile_scroll_tick >= tile_speed) {tile_scroll_tick = 0;}
+if(tile_spawn >= 32)
 {
 tile_spawn = 0;
     for (i=0;i<room_height/32; i++)
@@ -30,9 +30,9 @@ tile_add(bg_starfield,x_tile*32,y_tile*32,32,32,j*32,i*32,1000);
     for (i=0;i<room_height/32; i++)
     {
     var tiles = tile_get_ids_at_depth(1000);
-    for (var z = 0; z < array_length_1d(tiles); z++;)
+    for (var z = 0; z < array_length(tiles); z++)
     {
-    var_tile_x = tile_get_x(tiles[z])
+    var var_tile_x = tile_get_x(tiles[z]);
     {
     if (var_tile_x < 0) {tile_delete(tiles[z]);}
     }    
@@ -42,4 +42,3 @@ tile_add(bg_starfield,x_tile*32,y_tile*32,32,32,j*32,i*32,1000);
 }
 }
 //show_debug_message(array_length_1d(tile_get_ids_at_depth(1000)));
-

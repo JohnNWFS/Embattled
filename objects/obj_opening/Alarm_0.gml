@@ -322,7 +322,7 @@ default:
 break;
 }
     
-if (our_letter = total_letters) {ds_list_destroy(our_list);
+if (our_letter == total_letters) {ds_list_destroy(our_list);
 alarm[0] = -1;
 alarm[1] = 30;
 }

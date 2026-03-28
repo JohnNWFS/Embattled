@@ -1,5 +1,5 @@
 /// @description handle rewards
-if (score > score_prize_goal)
+if (global.score > score_prize_goal)
 {
 
 
@@ -8,6 +8,5 @@ score_prize_goal += score_prize_increment;
 score_prize_increment += score_prize_increment;
 
 }
-
 
 

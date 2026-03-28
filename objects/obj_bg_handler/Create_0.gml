@@ -2,7 +2,7 @@
 if (os_browser == browser_not_a_browser)
 {
 tile_speed = 7;
-_tile_flip = 0;
+tile_scroll_tick = 0;
 tile_spawn = 0;
 tiles_array[room_height/32+1,room_width/2+1] = 0;
 tile_to_use[0,0] = 0;
@@ -38,6 +38,5 @@ __background_set( e__BG.HSpeed, 0, -3 );
 __background_set( e__BG.Visible, 0, 1 );
 
 }
-
 
 

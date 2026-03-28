@@ -1,12 +1,12 @@
 /// @description check for position, handle show
 
-if (object_exists(obj_player) && can_dock == 1)
+if (instance_exists(obj_player) && can_dock == 1)
 {
 //show_debug_message("abs(obj_player.x-x) " + string(abs(obj_player.x-x)) + " (abs(obj_player.y-y) " + string(abs(obj_player.y-y)));
     if ((abs(obj_player.x-x) > 13) && (abs(obj_player.x-x) < 18) && (abs(obj_player.y-y) > 4) && (abs(obj_player.y-y) < 8 )) //magic range to dock
     {
     
-        if (object_exists(obj_cannon))
+        if (instance_exists(obj_cannon))
         {
            fix_xy = 1;
         }
@@ -19,12 +19,15 @@ if (object_exists(obj_player) && can_dock == 1)
 
 if (docked == 1)
 {
-    obj_player.i_am_docked = 1;
-    obj_player.x = obj_repair_dock.x + 16;
-    obj_player.y = obj_repair_dock.y + 6;
+    if (instance_exists(obj_player))
+    {
+        obj_player.i_am_docked = 1;
+        obj_player.x = x + 16;
+        obj_player.y = y + 6;
+    }
 }
 
-if (docked == 1 & light_show == 0)
+if (docked == 1 && light_show == 0)
 {
     can_dock = 0;
     light_show = 1;
@@ -48,9 +51,8 @@ y = obj_repair_main.y;
 
 if (docked == 1)
 {
-    if (obj_player.hp < obj_player.max_hp)
+    if (instance_exists(obj_player) && obj_player.hp < obj_player.max_hp)
     {
     obj_player.hp +=1;
     }
 }
-

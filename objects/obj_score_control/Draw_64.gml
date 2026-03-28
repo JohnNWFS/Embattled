@@ -26,10 +26,10 @@ draw_sprite_ext(spr_letters,17,35,room_height-16,.75,.75,0,c_white,1);
 draw_sprite_ext(spr_letters,4,45,room_height-16,.75,.75,0,c_white,1);
 
 //gather score and draw it
-score_value = string(score);
-var len = string_length(score_value);
+score_value = string(global.score);
+var score_len = string_length(score_value);
 
-for (j=0; j < (10 -(len)); j++)
+for (j=0; j < (10 - score_len); j++)
 { score_value = "0" + score_value; }
 
 //draw actual score
@@ -41,9 +41,9 @@ if (string_char_at(check,string_length(check)-2) != "." && obj_wave_handler.wave
     {
     //draw Wave
     wave_value = string(obj_wave_handler.wave);
-    var len = string_length(wave_value);
+    var wave_len = string_length(wave_value);
     
-    for (j=0; j < (4 -(len)); j++)
+    for (j=0; j < (4 - wave_len); j++)
         { 
         wave_value = "0" + wave_value; 
         }
@@ -96,4 +96,3 @@ draw_sprite_ext(spr_letters,3,80+194,5,.75,.75,0,c_white,1);
 draw_sprite_ext(spr_letters,4,90+194,5,.75,.75,0,c_white,1);
 
 }
-

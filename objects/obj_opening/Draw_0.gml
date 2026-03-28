@@ -1,4 +1,16 @@
 /// @description draw each step
+if (!surface_exists(my_surface))
+{
+    my_surface = surface_create(room_width, room_height);
+    if (!surface_exists(my_surface))
+    {
+        exit;
+    }
+    surface_set_target(my_surface);
+    draw_clear_alpha(c_black,0);
+    surface_reset_target();
+}
+
 surface_set_target(my_surface);
 draw_set_color(c_white);
 if (current_point < max_point-4)
@@ -27,23 +39,8 @@ if (current_point < max_point-4)
     draw_surface(my_surface,0,0);
     }
     
-    if (!surface_exists(my_surface))
-    {
-    our_letter = 0;
-    our_list = ds_list_create();
-    my_surface = surface_create(room_width, room_height);
-    surface_set_target(my_surface);
-    draw_clear_alpha(c_black,0);
-    surface_reset_target();
-    alarm[0]=point_speed;
-    max_point = ds_list_size(our_list);
-    list_prepped = 1;
-    
-    }
-    
-
 ///draw credits
-if (our_letter = total_letters)
+if (our_letter == total_letters)
 {
     var my_message = "A GAME BY|@JOHNNWFS"
     var my_row = 0;

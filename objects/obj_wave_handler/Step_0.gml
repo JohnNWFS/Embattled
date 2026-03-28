@@ -46,7 +46,7 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         break;
 
         case 0:
-        obj_player_thrust.visible = 1;
+        if (instance_exists(obj_player) && instance_exists(obj_player.our_thrust)) { obj_player.our_thrust.visible = 1; }
         break;
         
         case 1:
@@ -58,7 +58,7 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         case 2: //Two simple non-firing ships
         var test = instance_create(room_width+64,(room_height / 2)-24,obj_enemy_1);
         scr_enemy_type(test,5,path_straight,-1); //simple enemy, straight path
-        var test = instance_create(room_width+64,(room_height / 2)+24,obj_enemy_1);
+        test = instance_create(room_width+64,(room_height / 2)+24,obj_enemy_1);
         scr_enemy_type(test,5,path_straight,450); //simple enemy, straight path
         
         break;
@@ -109,27 +109,27 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         case 8:   //a big guy  plus a couple others      
         var test = instance_create(room_width+128,-116+(room_height / 2)-16,obj_enemy_1);
         scr_enemy_type(test,3,path_down_up,-1);
-        var test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_large_1);
+        test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_large_1);
         scr_enemy_type(test,4,path_rotate_enemy,-1); 
-        var test = instance_create(room_width+128,64+(room_height / 2)-16,obj_enemy_1);
+        test = instance_create(room_width+128,64+(room_height / 2)-16,obj_enemy_1);
         scr_enemy_type(test,3,path_down_up,860);           
         break;
         
         case 9:   //a big guy  plus a couple others      
         var test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_1);
         scr_enemy_type(test,2,path_up_down,-1);
-        var test = instance_create(room_width+64,-64+(room_height / 2),obj_enemy_large_1);
+        test = instance_create(room_width+64,-64+(room_height / 2),obj_enemy_large_1);
         scr_enemy_type(test,4,path_high_peaks,-1);
-        var test = instance_create(room_width+128,64+(room_height / 2)-16,obj_enemy_1);
+        test = instance_create(room_width+128,64+(room_height / 2)-16,obj_enemy_1);
         scr_enemy_type(test,2,path_up_down,860);           
         break;
 
         case 10:   //a big guy  plus a couple others      
         var test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_1);
         scr_enemy_type(test,6,path_high_peaks,520);
-        var test = instance_create(room_width+64,-64+(room_height / 2),obj_enemy_large_1);
+        test = instance_create(room_width+64,-64+(room_height / 2),obj_enemy_large_1);
         scr_enemy_type(test,4,path_down_up,520);
-        var test = instance_create(room_width+128,64+(room_height / 2)-16,obj_enemy_1);
+        test = instance_create(room_width+128,64+(room_height / 2)-16,obj_enemy_1);
         scr_enemy_type(test,6,path_high_peaks,520);
         wave_increment = .5           
         break;
@@ -205,10 +205,10 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
 if (obj_player.visible == 1 && !instance_exists(obj_repair_main))
 {
 score_counter += 1;
-    if (score_counter = 30) //score counter gives points 1/2 a second
+    if (score_counter >= 30) //score counter gives points 1/2 a second
     {
     score_counter = 0;
-    score += 1;
+    global.score += 1;
     }
 }
 
@@ -216,6 +216,5 @@ score_counter += 1;
 if (global.debug == 1)
 {
 obj_player.visible = 1;
-obj_player_thrust.visible = 1;
+if (instance_exists(obj_player) && instance_exists(obj_player.our_thrust)) { obj_player.our_thrust.visible = 1; }
 }
-

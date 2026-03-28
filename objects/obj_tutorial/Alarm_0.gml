@@ -1,10 +1,15 @@
 /// @description Go through Tutorial steps
 my_message = "";
 tutorial_step += 1;
+var bubble = noone;
+var bubble1 = noone;
+var bubble2 = noone;
+var prize = noone;
+var my_enemy = noone;
 switch (tutorial_step)
 {
 case 1:
-var bubble = instance_create(obj_player.x,obj_player.y-60,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-60,obj_bubble);
 with (bubble)
 {
 letters_x_offset = 0;
@@ -22,7 +27,7 @@ alarm[0]=240;
 break;
 
 case 2:
-var bubble = instance_create(obj_player.x,obj_player.y-60,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-60,obj_bubble);
 with (bubble)
 {
 my_attached = obj_player;
@@ -38,7 +43,7 @@ alarm[0]=240;
 break;
 
 case 3:
-var bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
 with (bubble)
 {
 my_attached = obj_player;
@@ -56,7 +61,7 @@ alarm[0]=240;
 break;
 
 case 4:
-var bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
 with (bubble)
 {
 my_attached = obj_player;
@@ -73,7 +78,7 @@ alarm[0]=240;
 break;
 
 case 5:
-var bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
 with (bubble)
 {
 my_attached = obj_player;
@@ -90,7 +95,7 @@ alarm[0]=240;
 break;
 
 case 6:
-var bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
 with (bubble)
 {
 my_attached = obj_player;
@@ -107,7 +112,7 @@ alarm[0]=240;
 break;
 
 case 7:
-var bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
 with (bubble)
 {
 my_attached = obj_player;
@@ -124,7 +129,7 @@ alarm[0]=240;
 break;
 
 case 8:
-var bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
 with (bubble)
 {
 my_attached = obj_player;
@@ -139,8 +144,8 @@ alarm[0]=180;
 }
 
 {
-var my_enemy = instance_create(room_width+32,room_height/2,obj_enemy_1);
-var bubble2 = instance_create(my_enemy.x,my_enemy.y-70,obj_bubble);
+my_enemy = instance_create(room_width+32,room_height/2,obj_enemy_1);
+bubble2 = instance_create(my_enemy.x,my_enemy.y-70,obj_bubble);
 with (my_enemy) {move_towards_point(-64,y,2);}
 with(bubble2){
     my_attached = my_enemy;
@@ -166,7 +171,7 @@ my_enemy = instance_find(obj_enemy_1,0);
 if (instance_exists(my_enemy))
     {    
     tutorial_step -=1;
-    var bubble2 = instance_create(my_enemy.x,my_enemy.y-70,obj_bubble);
+    bubble2 = instance_create(my_enemy.x,my_enemy.y-70,obj_bubble);
     with(bubble2)
         {
             my_attached = my_enemy;
@@ -183,7 +188,7 @@ if (instance_exists(my_enemy))
     }
 else
 {
-var bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
     with (bubble)
     {
     my_attached = obj_player;
@@ -202,7 +207,7 @@ alarm[0]=200;
 break;
 
 case 10:
-    var bubble1 = instance_create(32,room_height - 84,obj_bubble);
+    bubble1 = instance_create(32,room_height - 84,obj_bubble);
     with (bubble1)
     {
     my_attached = -1;
@@ -219,7 +224,7 @@ case 10:
 break;
 
 case 11:
-var bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
+bubble = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
 with (bubble)
 {
 my_attached = obj_player;
@@ -236,8 +241,8 @@ alarm[0]=240;
 break;
 
 case 12:
-var my_enemy = instance_create(room_width+32,room_height/2,obj_enemy_1);
-var bubble2 = instance_create(my_enemy.x,my_enemy.y-70,obj_bubble);
+my_enemy = instance_create(room_width+32,room_height/2,obj_enemy_1);
+bubble2 = instance_create(my_enemy.x,my_enemy.y-70,obj_bubble);
 with (my_enemy) {move_towards_point(-64,y,2);}
 with(bubble2){
     my_attached = my_enemy;
@@ -260,7 +265,7 @@ my_enemy = instance_find(obj_enemy_1,0);
 if (instance_exists(my_enemy))
     {    
     tutorial_step -=1;
-    var bubble2 = instance_create(my_enemy.x,my_enemy.y-70,obj_bubble);
+    bubble2 = instance_create(my_enemy.x,my_enemy.y-70,obj_bubble);
     with(bubble2)
         {
             my_attached = my_enemy;
@@ -282,7 +287,7 @@ alarm[0]=200;
 break;
 
 case 14:
-    var bubble2 = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
+    bubble2 = instance_create(obj_player.x,obj_player.y-70,obj_bubble);
     with(bubble2)
         {
             my_attached = obj_player;
@@ -299,7 +304,7 @@ alarm[0]=200;
 break;
 
 case 15:
-    var bubble1 = instance_create(250,room_height - 94,obj_bubble);
+    bubble1 = instance_create(250,room_height - 94,obj_bubble);
     with (bubble1)
     {
     my_attached = -1;
@@ -316,7 +321,7 @@ case 15:
 break;
 
 case 16:
-    var bubble1 = instance_create(250,room_height - 94,obj_bubble);
+    bubble1 = instance_create(250,room_height - 94,obj_bubble);
     with (bubble1)
     {
     my_attached = -1;
@@ -335,7 +340,7 @@ break;
 
 
 case 17:
-    var bubble1 = instance_create(250,room_height - 94,obj_bubble);
+    bubble1 = instance_create(250,room_height - 94,obj_bubble);
     with (bubble1)
     {
     my_attached = -1;
@@ -348,7 +353,7 @@ case 17:
     image_xscale = 2.3;
     alarm[0]=240;
     }
-    var prize = instance_create(room_width-1,obj_player.y,obj_armor_bonus);
+    prize = instance_create(room_width-1,obj_player.y,obj_armor_bonus);
     with (prize)
     {
         increase_armor = 25;
@@ -359,7 +364,7 @@ case 17:
 break;
 
 case 18:
-    var bubble1 = instance_create(obj_player.x,obj_player.y - 94,obj_bubble);
+    bubble1 = instance_create(obj_player.x,obj_player.y - 94,obj_bubble);
     with (bubble1)
     {
     my_attached = obj_player;
@@ -376,7 +381,7 @@ case 18:
 break;
 
 case 19:
-    var bubble1 = instance_create(350,room_height - 94,obj_bubble);
+    bubble1 = instance_create(350,room_height - 94,obj_bubble);
     with (bubble1)
     {
     my_attached = -1;
@@ -393,7 +398,7 @@ case 19:
 break;
 
 case 20:
-    var bubble1 = instance_create(350,room_height - 94,obj_bubble);
+    bubble1 = instance_create(350,room_height - 94,obj_bubble);
     with (bubble1)
     {
     my_attached = -1;
@@ -411,7 +416,7 @@ case 20:
 break;
 
 case 21:
-    var bubble1 = instance_create(250,room_height - 94,obj_bubble);
+    bubble1 = instance_create(250,room_height - 94,obj_bubble);
     with (bubble1)
     {
     my_attached = -1;
@@ -424,7 +429,7 @@ case 21:
     image_xscale = 3;
     alarm[0]=240;
     }
-    var prize = instance_create(room_width-16,obj_player.y,obj_armor_bonus);
+    prize = instance_create(room_width-16,obj_player.y,obj_armor_bonus);
     with (prize)
         {increase_shot_power = 1;
          move_towards_point(obj_player.x, obj_player.y, 4);
@@ -441,7 +446,7 @@ case 21:
 break;
 
 case 22:
-    var bubble1 = instance_create(350,room_height - 94,obj_bubble);
+    bubble1 = instance_create(350,room_height - 94,obj_bubble);
     with (bubble1)
     {
     my_attached = obj_tutorial;
@@ -459,7 +464,7 @@ case 22:
 break;
 
 case 23:
-    var bubble1 = instance_create(200,32,obj_bubble);
+    bubble1 = instance_create(200,32,obj_bubble);
     with (bubble1)
     {
     my_attached = -1;
@@ -477,7 +482,7 @@ case 23:
 break;
 
 case 24:
-    var bubble1 = instance_create(100,25,obj_bubble);
+    bubble1 = instance_create(100,25,obj_bubble);
     with (bubble1)
     {
     my_attached = obj_tutorial;
@@ -498,7 +503,7 @@ break;
 case 25:
 global.tutorial = 0;
 obj_player.hp = obj_player.max_hp;
-score = 0;
+global.score = 0;
 instance_destroy();
 
 break;
@@ -506,5 +511,4 @@ break;
 default:
 break;
 }
-
 

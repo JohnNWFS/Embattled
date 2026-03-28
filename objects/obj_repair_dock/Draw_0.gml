@@ -6,7 +6,7 @@ draw_self();
 if (docked == 1 && show_docked_message == 0)
 {
 show_docked_message = 1;
-    if (obj_wave_handler.wave > 0)
+    if (obj_wave_handler.wave > 0 && instance_exists(obj_repair_main))
     {
     var bubble = instance_create(obj_repair_main.x,obj_repair_main.y-60,obj_bubble);
     with (bubble)
@@ -29,7 +29,7 @@ show_docked_message = 1;
 if (docked == 1 && light_show == 1)
 {
 
-obj_player.depth = 200;
+if (instance_exists(obj_player)) { obj_player.depth = 200; }
 draw_set_color(c_white);
 var start_value = 6;
 var line_length = 32;
@@ -48,13 +48,12 @@ var line_length = 32;
     
 }
 
-if (obj_wave_handler.wave == -.5 && docked = 0 && draw_player = 1)
+if (obj_wave_handler.wave == -.5 && docked == 0 && draw_player == 1)
 {
 draw_sprite(spr_player,0,x+16,y+6);
 }
 if (docked == 1)
 {
 draw_player = 0;
-obj_player.visible = 1;
+if (instance_exists(obj_player)) { obj_player.visible = 1; }
 }
-
