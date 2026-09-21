@@ -2,6 +2,12 @@
 
 if (x < -10) {firing = 0; }
 
+if (kamikaze == 1 && instance_exists(obj_player))
+{
+    path_end();
+    move_towards_point(obj_player.x, obj_player.y, 3.2);
+}
+
 //if ( x <= -60 || y < -64 || y > room_height + 64) 
 //{
 //instance_destroy();
@@ -10,7 +16,7 @@ if (x < -10) {firing = 0; }
 if (place_meeting(x,y,obj_player_parent))
 {
     player = instance_place(x,y,obj_player_parent);
-    player.hp -= enemy_hp;
+    player.hp -= max(enemy_hp, my_power);
     enemy_hp = 0;
 }
 

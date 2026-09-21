@@ -14,6 +14,7 @@ if (global.debug == 1)
     instance_create(15,5,obj_debug_ship_selector);
 }
 
+scr_fx_init();
 score_prize_goal = 1000;
 score_prize_increment = 250;
 score_counter = 0;

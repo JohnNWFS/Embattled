@@ -15,7 +15,9 @@ draw_rectangle(261,room_height-14  ,261+(100*2),  room_height-14+5,0);
 draw_set_color(c_yellow);
 draw_rectangle(260,room_height-14-1,260+(100*2)+2,room_height-14+6,1);
 draw_set_color(c_blue);
+if (instance_exists(obj_player)) {
 draw_rectangle(261,room_height-14  ,261+(obj_player.hp*2),  room_height-14+5,0);
+}
 
 //draw the word "score"
 draw_set_color(c_white);

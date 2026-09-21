@@ -1,5 +1,8 @@
 /// @description spawn random things
 var item = irandom_range(0,3)
+var start_x = 0;
+var start_y = 0;
+var spawn = noone;
 {
 if (first_item == 0) {first_item = 1; item = 0;}
 switch (item)
@@ -26,9 +29,9 @@ var bubble1 = instance_create(200,200,obj_bubble);
     }
     
 case 1: // an enemy
-    var start_x = room_width + 32;
-    var start_y = (room_height/2) + irandom_range(-128,128);
-    var spawn = instance_create(start_x,start_y,obj_blank);    
+    start_x = room_width + 32;
+    start_y = (room_height/2) + irandom_range(-128,128);
+    spawn = instance_create(start_x,start_y,obj_blank);    
     with (spawn)
     {
         var choice = choose(spr_enemy_1, spr_enemy_large);
@@ -40,16 +43,16 @@ case 1: // an enemy
 break;
 
 case 2:
-    var start_x = -32;
-    var start_y = (room_height/2) + irandom_range(-128,128);
-    var spawn = instance_create(start_x,start_y,obj_blank);    
+    start_x = -32;
+    start_y = (room_height/2) + irandom_range(-128,128);
+    spawn = instance_create(start_x,start_y,obj_blank);    
     with (spawn)
     {
         sprite_index = spr_player;
         image_speed = .2;
         move_towards_point( room_width+64,y,3);
     }
-    var spawn = instance_create(start_x-12,start_y,obj_blank);
+    spawn = instance_create(start_x-12,start_y,obj_blank);
     with (spawn)
     {
         sprite_index = spr_thrust;
@@ -61,9 +64,9 @@ case 2:
 break;
 
 case 3:
-var start_x = choose(room_width+64,-64);
-var start_y = irandom_range(room_height/2 - 128, room_height/2 + 128);
-    var spawn = instance_create(start_x,start_y,obj_blank);    
+start_x = choose(room_width+64,-64);
+start_y = irandom_range(room_height/2 - 128, room_height/2 + 128);
+    spawn = instance_create(start_x,start_y,obj_blank);    
     with (spawn)
     {
         var choice = choose(spr_armor_bonus_prize, spr_power_bonus_prize);
@@ -84,4 +87,3 @@ break;
 
 }
 alarm[1] = 300;
-

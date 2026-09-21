@@ -15,8 +15,8 @@ rotate_counter = 0;
 actual_number = 6;
 track_number = 0; //used to check if # goes up or down
 new_number = 1; //number to test against before becoming actual #
-
-
-
-
-
+spawn_mode = 0; //0 enemy, 1 reward, 2 platform
+path_mode = 0; //0 straight, 1 up/down, 2 down/up, 3 rotate, 4 rotate2, 5 peaks
+enemy_type_id = 6;
+reward_type_id = 1;
+spawn_target_y = room_height div 2;

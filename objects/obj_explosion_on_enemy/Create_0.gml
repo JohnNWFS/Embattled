@@ -6,5 +6,6 @@ my_x1 = x;
 my_y1 = y;
 my_x_offset = 0;
 my_y_offset = 0;
-    
 
+scr_fx_burst("hit", x, y, 1);
+    

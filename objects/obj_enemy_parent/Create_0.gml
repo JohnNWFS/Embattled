@@ -28,4 +28,5 @@ player = 0; //variable to get player id
 my_explosion = obj_enemy_explosion_1;
 my_follower = 0; //used with tutorial
 prize_percent = 10; //10% chance by default (whole number, not decimal)
+kamikaze = 0;
 

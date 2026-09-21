@@ -18,4 +18,5 @@ i_am_docked = 0; //handle dock actions on player
 plasma_available = 1; //does holding down fire cause plasma to form
 plasma_counter = 0; //use to count charge up to plasma release
 plasma_release = 120; // use to trigger plasma release;
-
+powerup_sheen_timer = 0;
+powerup_sheen_duration = 45;

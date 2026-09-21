@@ -18,6 +18,8 @@ if (visible == 1)
     inst.shot_speed = 4;
     inst.shot_power = my_shot_power;
     alarm[0] = shot_delay;
+    scr_fx_burst("muzzle", x+24, y+20, 1);
+    scr_sfx("shot_player");
     //handle drone 1 fire if it exists
         if (instance_exists(obj_drone_1))
     {

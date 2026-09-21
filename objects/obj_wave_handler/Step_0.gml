@@ -2,7 +2,10 @@
 //show_debug_message("Wave = " + string(wave));
 if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while tutorial or debug on. trigger causes wave to spawn
 {
-        trigger = 0;
+    var test = noone;
+    var dock = noone;
+    var my_drone = noone;
+    trigger = 0;
     switch(wave)
     {
         //define enemies in wave, set them on a path and then set alarm for next wave
@@ -26,7 +29,7 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         image_yscale = 1.2;
         x = room_width/2-60;
         y = room_height/2-32;
-        obj_player.x = room_width;
+        if (instance_exists(obj_player)) { obj_player.x = room_width; }
         }
          alarm[0]=240;
         break;
@@ -102,12 +105,12 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         break;
 
         case 7:   //a big guy        
-        var test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_large_1);
+        test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_large_1);
         scr_enemy_type(test,4,path_straight,780); //simple enemy, straight path, 780ms timer
         break;
 
         case 8:   //a big guy  plus a couple others      
-        var test = instance_create(room_width+128,-116+(room_height / 2)-16,obj_enemy_1);
+        test = instance_create(room_width+128,-116+(room_height / 2)-16,obj_enemy_1);
         scr_enemy_type(test,3,path_down_up,-1);
         test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_large_1);
         scr_enemy_type(test,4,path_rotate_enemy,-1); 
@@ -116,7 +119,7 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         break;
         
         case 9:   //a big guy  plus a couple others      
-        var test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_1);
+        test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_1);
         scr_enemy_type(test,2,path_up_down,-1);
         test = instance_create(room_width+64,-64+(room_height / 2),obj_enemy_large_1);
         scr_enemy_type(test,4,path_high_peaks,-1);
@@ -125,7 +128,7 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         break;
 
         case 10:   //a big guy  plus a couple others      
-        var test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_1);
+        test = instance_create(room_width+64,-64+(room_height / 2)-16,obj_enemy_1);
         scr_enemy_type(test,6,path_high_peaks,520);
         test = instance_create(room_width+64,-64+(room_height / 2),obj_enemy_large_1);
         scr_enemy_type(test,4,path_down_up,520);
@@ -143,7 +146,7 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         break;
         }
         if (instance_exists(obj_shield)) { with(obj_shield) {instance_destroy();}}
-        var dock = instance_create(-128,room_height/2,obj_repair_main);
+        dock = instance_create(-128,room_height/2,obj_repair_main);
         with(dock)
         {
         dock.image_speed = .2;
@@ -156,7 +159,8 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         break;
 
         case 11: //add drone 1
-        var my_drone = instance_create(obj_player.x,obj_player.y-32,obj_drone_1);
+        if (!instance_exists(obj_player)) { break; }
+        my_drone = instance_create(obj_player.x,obj_player.y-32,obj_drone_1);
         my_drone.image_xscale = .76;
         my_drone.image_yscale = .76;
         my_drone.specific_y_offset =-40;
@@ -164,8 +168,9 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         break;
         
         case 12: //add drone 
+        if (!instance_exists(obj_player)) { break; }
         if (instance_exists(obj_drone_1)) {with(obj_drone_1){instance_destroy();}}
-        var my_drone = instance_create(obj_player.x,obj_player.y-32,obj_drone_1);
+        my_drone = instance_create(obj_player.x,obj_player.y-32,obj_drone_1);
         my_drone.image_xscale = .76;
         my_drone.image_yscale = .76;
         my_drone.specific_y_offset =-40;        
@@ -178,6 +183,77 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
         
                 
                 
+        case 13:
+        test = instance_create(room_width+96, room_height/2 - 40, obj_enemy_strafer);
+        scr_enemy_type(test, 8, path_up_down, -1);
+        test = instance_create(room_width+96, room_height/2 + 40, obj_enemy_strafer);
+        scr_enemy_type(test, 8, path_down_up, 360);
+        break;
+
+        case 14:
+        test = instance_create(room_width+64, room_height/2 - 16, obj_enemy_kamikaze);
+        scr_enemy_type(test, 7, path_straight, 90);
+        test = instance_create(room_width+96, room_height/2 + 24, obj_enemy_kamikaze);
+        scr_enemy_type(test, 7, path_straight, 280);
+        break;
+
+        case 15:
+        test = instance_create(room_width+80, room_height/2 - 16, obj_enemy_shield_carrier);
+        scr_enemy_type(test, 9, path_rotate_enemy, 420);
+        break;
+
+        case 16:
+        test = instance_create(room_width+96, room_height/2 - 48, obj_enemy_strafer);
+        scr_enemy_type(test, 8, path_high_peaks, -1);
+        test = instance_create(room_width+64, room_height/2, obj_enemy_shield_carrier);
+        scr_enemy_type(test, 9, path_straight, -1);
+        test = instance_create(room_width+96, room_height/2 + 48, obj_enemy_kamikaze);
+        scr_enemy_type(test, 7, path_straight, 400);
+        break;
+
+        case 17: // recovery / reward
+        test = instance_create(room_width+64, room_height/2, obj_enemy_1);
+        scr_enemy_type(test, 5, path_straight, 300);
+        break;
+
+        case 18:
+        test = instance_create(room_width+96, room_height/2 - 50, obj_enemy_strafer);
+        scr_enemy_type(test, 8, path_rotate_enemy, -1);
+        test = instance_create(room_width+96, room_height/2 + 50, obj_enemy_strafer);
+        scr_enemy_type(test, 8, path_rotate_enemy_2, 320);
+        break;
+
+        case 19:
+        test = instance_create(room_width+80, room_height/2 - 30, obj_enemy_kamikaze);
+        scr_enemy_type(test, 7, path_straight, -1);
+        test = instance_create(room_width+110, room_height/2, obj_enemy_kamikaze);
+        scr_enemy_type(test, 7, path_straight, -1);
+        test = instance_create(room_width+80, room_height/2 + 30, obj_enemy_kamikaze);
+        scr_enemy_type(test, 7, path_straight, 240);
+        break;
+
+        case 20:
+        test = instance_create(room_width+64, room_height/2 - 16, obj_enemy_large_1);
+        scr_enemy_type(test, 4, path_straight, 900);
+        test = instance_create(room_width+128, room_height/2 - 70, obj_enemy_strafer);
+        scr_enemy_type(test, 8, path_up_down, -1);
+        test = instance_create(room_width+128, room_height/2 + 70, obj_enemy_strafer);
+        scr_enemy_type(test, 8, path_down_up, 900);
+        break;
+
+        case 21: // mini-boss presentation
+        test = instance_create(room_width+96, room_height/2 - 16, obj_enemy_large_1);
+        scr_enemy_type(test, 4, path_rotate_enemy, -1);
+        test.image_xscale = 1.35;
+        test.image_yscale = 1.35;
+        test.enemy_hp = 40;
+        test.enemy_value = 80;
+        test = instance_create(room_width+160, room_height/2 - 80, obj_enemy_shield_carrier);
+        scr_enemy_type(test, 9, path_up_down, -1);
+        test = instance_create(room_width+160, room_height/2 + 80, obj_enemy_shield_carrier);
+        scr_enemy_type(test, 9, path_down_up, 960);
+        break;
+
         default:
         if(irandom_range(0,100) > 50) {
         test = instance_create(room_width+96,-(irandom_range(-64,-32))+room_height / 2,choose_enemy_type());
@@ -197,6 +273,7 @@ if (trigger == 1 && global.tutorial == 0 && global.debug == 0) //no waves while 
 
     }
     if (irandom_range(0,100) < 16 && wave > 1) {scr_spawn_prize(100,1,0);}
+    if (wave >= 1 && frac(wave) == 0) { scr_sfx("wave"); }
     alarm[0] = time_trigger;
 
 }  //end no waves while tutorial on. trigger causes wave to spawn
